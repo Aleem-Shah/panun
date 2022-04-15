@@ -1,0 +1,59 @@
+
+<%- include("partials/header"); -%>
+
+<section class="showcase">
+  <header>
+    <h2 class="logo"><img src="https://i.ibb.co/yyRbQt8/logo.png" style="width:150px"></img></h2>
+    <div class="toggle"></div>
+  </header>
+
+  <div class="overlay"></div>
+  <div class="text">
+    <h2>Welcome TO The </h2> 
+    <h3>Panun-Blog</h3>
+    <p>The Panun Blog is a multimedia platform that is aimed at providing an inclusive platform for the people of Kashmir and elsewhere. Our vision is to facilitate a channel of healthy discourse and debate within the Kashmiri community. Truth, in the contemporary world, cannot be found in a black and white contrast. It is hidden somewhere in the shades of grey</p>
+    <a href="/about">Read More</a>
+  </div>
+  <ul class="social">
+    <li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEiEh7KnfRYUgAAAYArexAY-A-937gQi1KsPaZiJixHYmIB6AuGqXtAA7r0LYJ6ETLrDMDWp1SSvgxBc8Ed_PofsD5MetbMbk5FEEG0q8NfBdGkvhpmjxkHIWpe6DBOUUJqJN0=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fahmadpathan" target="_blank" rel="noopener"><img src="https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/linkedin-square-social-media-256.png" style="width:40px"></a></li>
+    <li><a href="https://twitter.com/yeahitsahmed?t=nss8kH6qp6wWPlokZlnMIg&s=09" target="_blank" rel="noopener"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+    <li><a href="https://www.instagram.com/stfu.ahmed/?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+  </ul>
+</section>
+<div class="menu">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
+  
+<script>
+  const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer"); -%>
+

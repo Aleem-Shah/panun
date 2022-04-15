@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+<h1 class="headings">Freshly brewed posts</h1>
+
+
+
+<%  posts.forEach(function(post){ %>
+
+    <div class="container-b">
+  <div class="card">
+    <div class="card__header">
+      <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image" width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Blog</span>
+      <h4><%=post.title%></h4>
+      <p>
+        <%=post.content.substring(0, 100) + " ..."%></p>
+        <a class="g-btn"href="/posts/<%=post._id%>">Read More</a>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        <div class="user__info">
+          <h5>Ahmad-Pathan</h5>
+          <small></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<% }) %>
+
