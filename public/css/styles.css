@@ -254,7 +254,8 @@ header .logo
 
 @media (max-width: 851px){
   .abt-p{
-    padding: 1rem;
+    padding: 5px;
+    text-align: center;
     font-size:12px; 
   }
 }
