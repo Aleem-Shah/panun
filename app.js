@@ -37,7 +37,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Admin:k9S7Tp7J8aXMhXf@cluster0.u9oyz.mongodb.net/BlogDb?retryWrites=true&w=majority", {useNewUrlParser: true},{ useUnifiedTopology: true } );
+mongoose.connect("mongodb+srv://Admin:k9S7Tp7J8aXMhXf@cluster0.u9oyz.mongodb.net/BlogDb?retryWrites=true&w=majority",{useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 const postSchema = {
   title: String,
